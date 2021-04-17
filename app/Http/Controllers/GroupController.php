@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class GroupController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,10 +21,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(){
-        return view('home');
+    public function listgroup(){
+        return view('docente/listgroup');
     }
-    public function course(){
-        return view('curso');
+
+    public function addgroup(){
+        return view('docente/addgroup');
+    }
+
+    public function listalum(){
+        return view('alumno/listalum');
     }
 }
